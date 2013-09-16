@@ -8,6 +8,12 @@ $peterRiver: #3498db;
 $alizarin: #e74c3c;
 $emerald: #2ecc71;
 
+@mixin box_sizing {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
 /* universal */
 
 html {
@@ -129,4 +135,14 @@ footer {
 	font-size: 17.5px;
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+	@include box_sizing;
 }
