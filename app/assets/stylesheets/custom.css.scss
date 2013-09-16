@@ -111,31 +111,6 @@ footer {
 		}
 	}
 }
-.button {
-	display: inline-block;
-	margin-bottom: 0;
-	line-height: 20px;
-	text-align: center;
-	vertical-align: middle;
-	cursor: pointer;
-	border: 1px solid $peterRiver;
-}
-.button-primary {
-	background: $peterRiver;
-	color: $white;
-	&:hover {
-		background: $belizeHole;
-		color: $white;
-		text-decoration: none;
-		border-color: $belizeHole;
-	}
-}
-.button-large {
-	padding: 11px 19px;
-	font-size: 17.5px;
-	-webkit-border-radius: 4px;
-	        border-radius: 4px;
-}
 
 /* sidebar */
 
@@ -166,6 +141,57 @@ aside {
 	float: left;
 	margin-right: 10px;
 }
+
+/* forms */
+
+.button {
+	display: inline-block;
+	margin-bottom: 0;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid $peterRiver;
+}
+.button-primary {
+	background: $peterRiver;
+	color: $white;
+	&:hover {
+		background: $belizeHole;
+		color: $white;
+		text-decoration: none;
+		border-color: $belizeHole;
+	}
+}
+.button-large {
+	padding: 11px 19px;
+	font-size: 17.5px;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+input, textarea, select, .uneditable-input {
+	border: 1px solid $grayMediumLight;
+	width: 100%;
+	margin-bottom: 15px;
+	box-shadow: none !important;
+	border-radius: 2px !important;
+	@include box_sizing;
+}
+input {
+	height: auto !important;	
+}
+#error_explanation {
+	color: $alizarin;
+	ul {
+		list-style: none;
+		margin: 0 0 18px 0;
+	}
+}
+.field_with_errors {
+	@extend .control-group;
+	@extend .error;
+}
+
 /* miscellaneous */
 
 .debug_dump {
