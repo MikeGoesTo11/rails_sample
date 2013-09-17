@@ -38,7 +38,7 @@ describe "User pages" do
 				fill_in "Confirmation", with: "foobar"
 			end
 			
-			it "should creat a user" do
+			it "should create a user" do
 				expect { click_button submit }.to change(User, :count).by(1)
 			end
 		end

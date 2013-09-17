@@ -46,6 +46,11 @@ h1 {
 	margin: 0 0 30px;
 	text-align: center;
 }
+.hero-unit {
+	h1 {
+		font-size: 2.5em;
+	}
+}
 h2 {
 	font-size: 1.2em;
 	letter-spacing: -1px;
@@ -156,6 +161,7 @@ aside {
 .button-primary {
 	background: $peterRiver;
 	color: $white;
+	font-weight: 200;
 	&:hover {
 		background: $belizeHole;
 		color: $white;
